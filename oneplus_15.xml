@@ -2,12 +2,13 @@
 <manifest>
   <remote fetch="https://git.codelinaro.org/clo/la" name="clo-la"/>
   <remote fetch="https://github.com/OnePlusOSS" name="origin"/>
+  <remote fetch="https://github.com/ASaltFishy" name="my_github"/>
   
   <remote fetch="https://mirrors.tuna.tsinghua.edu.cn/git/AOSP" name="aosp"/>
   <default revision="main-kernel-2025" remote="aosp" sync-j="4" />
   <superproject name="kernel/superproject" remote="aosp" revision="common-android16-6.12-2025-06" />
   
-  <project remote="origin" name="android_kernel_common_oneplus_sm8850" path="kernel_platform/common" revision="oneplus/sm8850_b_16.0.0_oneplus_15" clone-depth="1">
+  <project remote="my_github" name="android_kernel_common_oneplus_sm8850" path="kernel_platform/common" revision="oneplus/sm8850_b_16.0.0_oneplus_15" clone-depth="1">
     <linkfile dest="kernel_platform/.source_date_epoch_dir" src="."/>
   </project>
   <!-- <project remote="origin" name="android_kernel_oneplus_sm8850" path="kernel_platform/soc-repo" revision="oneplus/sm8850_b_16.0.0_oneplus_15"> -->
